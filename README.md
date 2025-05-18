@@ -1,2 +1,4 @@
-# MyLazyVim
-This repo contains my LazyVim configuracion. It's mainly foucused on PHP Developing in Symfony.
+# 💤 LazyVim
+
+A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
+Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
