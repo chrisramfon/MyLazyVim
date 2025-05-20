@@ -8,4 +8,4 @@ sudo make install
 cd ~
 git clone https://github.com/chrisramfon/MyLazyVim.git
 mkdir ~/.config/nvim
-cp MyLazyVim/* .config/nvim/
+cp -r MyLazyVim/* .config/nvim/
