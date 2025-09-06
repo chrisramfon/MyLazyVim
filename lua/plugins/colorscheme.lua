@@ -1,9 +1,16 @@
 return {
-  { "astridlyre/vim-moonlight", name = "moonlight", lazy = false, opts = {}, config = function() end },
   {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "moonlight",
+	"oncomouse/lushwal.nvim",
+	cmd = { "LushwalCompile" },
+	init = function()
+		vim.g.lushwal_configuration = {
+				transparent_background = true,
+		}
+	end,
+	dependencies = {
+		{ "rktjmp/lush.nvim" },
+		{ "rktjmp/shipwright.nvim" },
+	},
+	lazy = false,
     },
-  },
 }

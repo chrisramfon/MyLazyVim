@@ -9,3 +9,4 @@ opt.tabstop = 4       -- Number of spaces that a <Tab> counts for
 opt.softtabstop = 4   -- Number of spaces a tab feels like when editing
 opt.shiftwidth = 4    -- Number of spaces to use for each step of (auto)indent
 opt.expandtab = true  -- Use spaces instead of actual tab characters
+vim.o.cursorline = false
