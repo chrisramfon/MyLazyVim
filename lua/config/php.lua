@@ -6,6 +6,8 @@ dap.adapters.php = {
   args = { "/root/.local/share/nvim/mason/packages/php-debug-adapter/extension/out/phpDebug.js" },
 }
 
+vim.g.lazyvim_php_lsp = "intelephense"
+
 dap.configurations.php = {
   {
     type = "php",
