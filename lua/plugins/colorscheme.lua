@@ -1,16 +1,19 @@
 return {
-  {
-	"oncomouse/lushwal.nvim",
-	cmd = { "LushwalCompile" },
-	init = function()
-		vim.g.lushwal_configuration = {
-				transparent_background = true,
-		}
-	end,
-	dependencies = {
-		{ "rktjmp/lush.nvim" },
-		{ "rktjmp/shipwright.nvim" },
-	},
-	lazy = false,
-    },
+    {
+        "folke/tokyonight.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = {
+            style = "moon",
+            transparent = true,
+            styles = {
+                sidebars = "transparent",
+                floats = "transparent",
+            },
+        },
+        config = function(_, opts)
+            require("tokyonight").setup(opts)
+            vim.cmd([[colorscheme tokyonight]])
+        end,
+    }
 }
