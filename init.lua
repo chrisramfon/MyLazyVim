@@ -2,3 +2,4 @@
 require("config.lazy")
 require( "config.php" )
 require( "config.pylsp" )
+require( "config.intelephense" )
